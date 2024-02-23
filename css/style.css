@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(90deg, 
+              rgba(133,67,255,1) 0%, 
+              rgba(56,188,219,1) 35%, 
+              rgba(14,16,97,1) 100%);
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+}
+
+select,
+input {
+  width: 300px;
+  height: 30px;
+  font-size: 17px;
+  text-align: center; 
+  margin-top: 15px;
+}
+
+textarea {
+  font-size: 17px;
+  padding: 15px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-size: 17px;
+  background-color: rgb(193, 233, 193);
+  border: 1px solid green;
+  border-radius: 5px;
+  color: green;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container {
+  width: 1350px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#canvas {
+  background: rgb(255, 255, 255);
+}
+
+/* .display {
+ width: 1350px;
+ height: 400px;
+ margin-bottom: 25px;
+ background-color: white;
+ overflow: hidden;
+ overflow-y: scroll;
+} */
+
+.navigation {
+  display: flex;
+  width: 1350px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.527);
+  padding: 15px;
+}
+
+.navigation__box {
+  padding: 25px;
+  width: 450px;
+}
+
+.title {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.note {
+  display: none;
+  font-style: italic;
+  font-size: 14px;
+  padding-top: 15px;
+  color: red;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: rgb(190, 189, 189);
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+.form-tag,
+.form-info,
+.form-tag-create {
+  display: flex;
+  flex-direction: column;
+}
+
+.error-link,
+.error-src {
+  display: none;
+  font-size: 14px;
+  color: red;
+}
+
+.red {
+  color: red;
+}

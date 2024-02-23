@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>FRONT-END</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>
+      ГРАФІКА
+    </h1>
+
+    <canvas id="canvas" width="1350" height="400"></canvas>
+
+    <div class="navigation">
+      <div class="navigation__box">
+        <p class="title" id="red">
+          Виберіть необхідний тег
+        </p>
+        <form class="form-tag" name="formTag">
+          <select name="tag">
+            <option value="start" class="start"></option>
+            <option value="div">div</option>
+            <option value="h1">h1</option>
+            <option value="h2">h2</option>
+            <option value="h3">h3</option>
+            <option value="p">p</option>
+            <option value="a">a</option>
+            <option value="img">img</option>
+          </select>
+          <button type="button" name="selectBtnTag">Додати</button>
+        </form>
+    
+        <form class="form-tag-create" name="formTagCreate">
+          <input type="text" name="addNewTag" placeholder="Створіть новий тег">
+          <button type="button" name="addTagBtn">Створити</button>
+
+          <!-- <p class="note">
+            *При створені нового тегу, парний тег вводьте по шаблону: "div,/div". 
+            Непарний тег - "img". Неправильне введення призведе до помилки
+            у вашому коді.
+          </p> -->
+        </form>
+      </div>
+
+      <div class="navigation__box">
+        <form class="form-info" name="formInfo">
+          <p class="title">
+            Введіть необхідну для вашого коду інформацію
+          </p>
+
+          <textarea name="addText" id="" cols="30" rows="3" placeholder="Введіть текст"></textarea>
+          <button type="button" name="addTextBtn">Додати</button>
+          <p class="note">
+            Неможливо ввести текст в непарний тег.
+          </p>
+
+          <input type="text" name="addClass" placeholder="Введіть назву класу">
+          <button type="button" name="addClassBtn">Додати</button>
+          
+          <input type="url" class="add-link" name="addLink" placeholder="Введіть посилання на контент (href)">
+          <button type="button" name="addLinkBtn">Додати</button>
+          <!-- <p class="error-link" name="errorLink">
+            Лише для тегу 'a'!
+          </p> -->
+
+          <input type="url" name="addSrc" placeholder="Введіть посилання на зображення (src)">
+          <button type="button" name="addSrcBtn">Додати</button>
+          <p class="error-src" name="errorSrc">
+            Лише для тегу 'img'!
+          </p>
+        </form>
+      </div>
+
+      <div class="navigation__box">
+        <form class="form-style" name="formStyle">
+          <p class="title">
+            Створіть стиль
+          </p>
+          <textarea name="addStyle" id="" cols="30" rows="3" placeholder="CSS"></textarea>
+          <button type="button" name="addStyleBtn">Додати</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

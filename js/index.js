@@ -6,10 +6,10 @@ const cHeight = canvas.clientHeight;
 const formFigures = document.querySelector('.form-figures');
 const parametersBox = document.querySelector('.parameters__box');
 const form = document.forms['formFiguresCreate'];
-let backgroundColor = '#ffffff'; // Змінна для зберігання коліру фону канви
+let backgroundColor = '#ffffff';
 
 window.addEventListener('load', () => {
-  canvas.style.backgroundColor = '#ffffff'; // Встановлення фону канви на білий колір
+  canvas.style.backgroundColor = '#ffffff';
 });
 
 formFigures.addEventListener('change', (event) => {
@@ -336,13 +336,13 @@ function drawText(x, y, text, fontSize, textColor, fontFamily) {
 // Функція для фону
 form.addEventListener('click', function(event) {
   if (event.target.name === 'addBgdColorBtn') { 
-    backgroundColor = form.querySelector('input[type="color"]').value; // Зберігаємо новий колір фону в змінну
-    canvas.style.backgroundColor = backgroundColor; // Встановлюємо новий колір фону канви
+    backgroundColor = form.querySelector('input[type="color"]').value;
+    canvas.style.backgroundColor = backgroundColor;
   }
 });
 
 // Функція для очищення канви
 document.querySelector('[name="resetBtn"]').addEventListener('click', () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  canvas.style.backgroundColor = '#ffffff'; // Встановлюємо колір фону канви на білий
+  canvas.style.backgroundColor = '#ffffff';
 });

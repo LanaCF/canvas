@@ -18,11 +18,11 @@
 
     <div class="navigation">
       <div class="navigation__box">
-        <p class="title" id="red">
+        <p class="title">
           Виберіть фігуру, яку треба намалювати
         </p>
-        <form class="form-figures" name="formTag">
-          <select name="tag">
+        <form class="form-figures" name="formFigures">
+          <select name="figures">
             <option value="start" class="start"></option>
             <option value="square">Квадрат</option>
             <option value="rectangle">Прямокутник</option>
@@ -33,23 +33,22 @@
             <option value="line">Лінія</option>
             <option value="text">Текст</option>
           </select>
-          <button type="button" name="selectBtnTag">Додати</button>
         </form>
     
-        <form class="form-form-info-create" name="formTagCreate">
-          <p class="title" id="red">
+        <form class="form-form-info-create" name="formFiguresCreate">
+          <p class="title">
             Виберіть фон канви
           </p>
 
-          <input type="color" name="addNewTag" placeholder="Створіть новий тег">
-          <button type="button" name="addTagBtn">Створити</button>
+          <input type="color" value="#ffff00">
+          <button type="button" name="addBgdColorBtn">Змінити фон</button>
         </form>
       </div>
 
       <div class="parameters__box"></div>
 
       <div class="reset__box">
-        <button type="reset" name="resetBtn">Очистити канву</button>
+        <button type="reset" name="resetBtn" class="reset-btn">Очистити канву</button>
       </div>
     </div>
   </div>
